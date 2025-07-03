@@ -13,6 +13,6 @@ jobs:
             - name: Adicionando Comentário
               uses: limalucas99/custom-action-js@main
               with:
-                GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{secrets.GH_TOKEN }}
                 issue-id: ${{ github.event.issue.number }}
                 comment: "Teste de comentário"
