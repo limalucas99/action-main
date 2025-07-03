@@ -14,8 +14,9 @@ jobs:
         name: Execucação de Custom Action
         steps:
             - name: Adicionando Comentário
-              uses: limalucas99/custom-action-composite@main
+              uses: limalucas99/custom-action-docker@main
               with:
                 GH_TOKEN: ${{ secrets.GH_TOKEN }}
                 issue-id: ${{ github.event.issue.number }}
+                GH_REPOSITORY: ${{ github.repository }}
                 comment: "Teste de comentário composite"
